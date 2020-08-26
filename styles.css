@@ -1,0 +1,17 @@
+body{
+    background: rgb(240,240,240);
+    text-align: justify;
+}
+.info{
+    background: rgb(255,255,255);
+}
+.hobbies{
+    list-style-type: circle;
+}
+.abilities{
+    list-style-type:upper-latin;
+
+}
+.footer{
+    text-align: center;
+}
