@@ -28,6 +28,26 @@
             </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
+                        <!-- Sugiero que si va a usar div de clase columna, que sea denntro de un div row dentro de un div container para evitar errores-->
+                        <!-- Para este caso sería más recomendable usar una lista de links y si quiere dejar espaceado, usar CSS para ello en vez de columnas -->
+                        
+                        <!--Cambio sugerido y aplciar css a estos elementos para agregar padding lateral-->
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#profile">Profile <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#profile">Profile <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#interests">Interests</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#academic">Academic history </a>
+                        </li>
+                        <!--
                         <div class="col-3">
                             <li class="nav-item active">
                                 <a class="nav-link" href="#profile">Profile <span class="sr-only">(current)</span></a>
@@ -48,7 +68,7 @@
                                 <a class="nav-link" href="#academic">Academic history </a>
                             </li>
                         </div>
-
+                        -->
                     </ul>
                 </div>
             </div>
@@ -94,8 +114,10 @@
                                         href="https://www.linkedin.com/in/daniel-betancurth-dorado-97a0a1159"
                                         target="_blank">Click here</a></dd>
                             </dl>
+                            <!--Borrar estas etiquetad de cierre!
                             </dd>
                             </dl>
+                             -->
                         </section>
                     </div>
                 </div>
@@ -152,6 +174,7 @@
                                     <li class="hobbies">Play with my dog</li>
                                     <li class="hobbies">Practice English</li>
                                     <li class="hobbies">Listen music</li>
+                                    <!-- Sacar este p y audio de la lista ordenada
                                     <p>My favorite song:</p>
                                     <audio controls>
                                         <source src="song.mp3">
@@ -159,7 +182,16 @@
 
                                       Your browser does not support the audio element.
                                       </audio>
+                                    -->
                                 </ol>
+                                <!--Algo asi-->
+                                <p>My favorite song:</p>
+                                    <audio controls>
+                                        <source src="song.mp3">
+                                        <source src="song.wav">
+
+                                      Your browser does not support the audio element.
+                                      </audio>
                             </div>
                             <div class="col-sm-12 col-md-6 col-lg-6">
                                 <h6 class="display-4">Abilities</h6>
