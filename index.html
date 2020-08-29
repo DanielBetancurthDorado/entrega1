@@ -17,7 +17,7 @@
 <body>
     <header>
         <img src="banner.png" width="100%" alt="Daniel Betancurth Dorado">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light d-none d-md-block">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light d-none d-md-block"> <!--Puede que la barra de navegación sea mas util si la deja sticky para que se pueda ir a cualquier seccion dando click.-->
             <div class="row">
             <div class="col-2">
                 <a class="navbar-brand" href="#">Website content</a>
@@ -28,7 +28,7 @@
             </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
-                        <div class="col-3">
+                        <div class="col-3"> <!--Div no se permite como hijo de ul según validator.w3.org, corregir todos los escenarios en los que esto sucede.-->
                             <li class="nav-item active">
                                 <a class="nav-link" href="#profile">Profile <span class="sr-only">(current)</span></a>
                             </li>
@@ -94,8 +94,8 @@
                                         href="https://www.linkedin.com/in/daniel-betancurth-dorado-97a0a1159"
                                         target="_blank">Click here</a></dd>
                             </dl>
-                            </dd>
-                            </dl>
+                            <!--Se eliminó un cierre de una etiqueta dd.-->
+                            <!--Se eliminó un cierre de etiqueta dl que sobraba.-->
                         </section>
                     </div>
                 </div>
@@ -114,7 +114,7 @@
                 </section>
                 <div class="row">
                     <section id="interests">
-                        <div class="row">
+                        <div class="row"> <!--Hace falta cerrar este elemento.-->
                             <div class="col-sm-12 col-md-12 col-lg-12">
                                 <h4 class="display-4">Interests</h4>
                                 <table class="table">
@@ -152,7 +152,7 @@
                                     <li class="hobbies">Play with my dog</li>
                                     <li class="hobbies">Practice English</li>
                                     <li class="hobbies">Listen music</li>
-                                    <p>My favorite song:</p>
+                                    <p>My favorite song:</p> <!--segun validator, p no se permite como hijo de una lista.-->
                                     <audio controls>
                                         <source src="song.mp3">
                                         <source src="song.wav">
