@@ -1,17 +1,29 @@
-body{
-    background: rgb(240,240,240);
-    text-align: justify;
+body {
+  background: rgb(240, 240, 240);
+  text-align: justify;
 }
-.info{
-    background: rgb(255,255,255);
+.info {
+  background: rgb(255, 255, 255);
 }
-.hobbies{
-    list-style-type: circle;
+.hobbies {
+  list-style-type: circle;
 }
-.abilities{
-    list-style-type:upper-latin;
+.abilities {
+  list-style-type: upper-latin;
+}
+.footer {
+  text-align: center;
+}
 
+/*New style for the banner*/
+.banner {
+  max-width: 100%;
 }
-.footer{
-    text-align: center;
+/*Modificación al estilo bold original de dt para arreglar el problema con div y mantener el mismo estilo.*/
+dt {
+  font-weight: lighter;
+}
+/*Sustituto no obsoleto al uso de borderframe=0 para iframes.*/
+iframe {
+  border: 0;
 }

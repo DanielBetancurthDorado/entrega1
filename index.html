@@ -1,238 +1,259 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-<head>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--Es preferible poner el nombre completo para que sea más pulido y mas descubrible.-->
+    <title>Daniel Betancurth Dorado</title>
+  </head>
 
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
-
-    <title>Daniel BD</title>
-</head>
-
-<body>
+  <body>
     <header>
-        <img src="banner.png" width="100%" alt="Daniel Betancurth Dorado">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light d-none d-md-block">
-            <div class="row">
-            <div class="col-2">
-                <a class="navbar-brand" href="#">Website content</a>
+      <img src="banner.png" alt="Daniel Betancurth Dorado" class="banner" />
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-light d-none d-md-block"
+      >
+        <div class="row">
+          <a class="navbar-brand" href="#">Website content</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <!--No se necesitan listas o divs para la barra de navegación.-->
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <!--No puede tener unordered lists en div, se cambia por dl (descripion list).-->>
+            <div class="navbar-nav">
+              <!--Se cambia li por dt dado que li no puede ser hijo de div (ajustes de estilo en styles.css para evitar la negrilla automática).-->
+              <a class="nav-link active" href="#profile"
+                >Profile <span class="sr-only">(current)</span></a
+              >
+              <a class="nav-link" href="#projects">Projects</a>
+              <a class="nav-link" href="#interests">Interests</a>
+              <a class="nav-link" href="#academic">Academic history </a>
             </div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <div class="col-3">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#profile">Profile <span class="sr-only">(current)</span></a>
-                            </li>
-                        </div>
-                        <div class="col-3">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#projects">Projects</a>
-                            </li>
-                        </div>
-                        <div class="col-3">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#interests">Interests</a>
-                            </li>
-                        </div>
-                        <div class="col-5">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#academic">Academic history </a>
-                            </li>
-                        </div>
-
-                    </ul>
-                </div>
-            </div>
-        </nav>
+          </div>
+        </div>
+      </nav>
     </header>
     <main>
-        <div class="container">
-            <div class="info p-5">
-                <div class="row">
-                    <div class="col-sm-12 col-md-12 col-lg-6">
-                        <section id="profile">
-                            <h1 class="display-4">Profile</h1>
-                            <p>A polite, friendly and sociable person who can coordinate the task in a development team
-                                and
-                                provide
-                                work
-                                quality of the highest calibre. Daniel can keep a cool head in busy circumstances and
-                                motivate
-                                the
-                                rest
-                                of
-                                the group to work at their optimum. He does not have office experience but is ready to
-                                work
-                                on
-                                it.
-                            </p>
-                        </section>
-                    </div>
-                    <div class="col-sm-12 col-md-12 col-lg-6">
-                        <section id="biografic" class="col-sm-12 col-md-6 col-lg-6">
-                            <h2 class="display-4">Contact</h2>
-                            <dl class="row">
-                                <dt class="col-12">Address</dt>
-                                <dd class="col-12">Cra 3 #7-38 Pereira
-                                <dt class="col-12">Phone</dt>
-                                <dd class="col-12">312593221
-                                </dd>
-                                <dt class="col-12">Email</dt>
-                                <dd class="col-12">danielbetancurth80@hotmail.com</dd>
-
-                                <dt class="col-12">Linkedin</dt>
-                                <dd class="col-12"><a
-                                        href="https://www.linkedin.com/in/daniel-betancurth-dorado-97a0a1159"
-                                        target="_blank">Click here</a></dd>
-                            </dl>
-                            </dd>
-                            </dl>
-                        </section>
-                    </div>
-                </div>
-                <section id="projects">
-                    <h3 class="display-4">Projects</h3>
-                    <dl>
-                        <dt>Ranking</dt>
-                        <dd>
-                            This prototype was made in 2018 with the aim of helping university graduates find jobs in
-                            the best companies in the country.
-                        </dd>
-                        <iframe src="https://www.youtube.com/embed/MHZXKtoeWvs" frameborder="0"
-                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                    </dl>
-                </section>
-                <div class="row">
-                    <section id="interests">
-                        <div class="row">
-                            <div class="col-sm-12 col-md-12 col-lg-12">
-                                <h4 class="display-4">Interests</h4>
-                                <table class="table">
-                                    <thead class="thead-dark">
-                                        <tr>
-                                            <th scope="col">Rank</th>
-                                            <th scope="col">Topic</th>
-
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <th scope="row">1</th>
-                                            <td>Machine Learning</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">2</th>
-                                            <td>Information Security</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">3</th>
-                                            <td>Process Automation</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">4</th>
-                                            <td>Mathematical models</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="col-sm-12 col-md-6 col-lg-6">
-                                <h5 class="display-4">Hobbies</h5>
-                                <p>During my free time I use to:</p>
-                                <ol>
-                                    <li class="hobbies">Play with my dog</li>
-                                    <li class="hobbies">Practice English</li>
-                                    <li class="hobbies">Listen music</li>
-                                    <p>My favorite song:</p>
-                                    <audio controls>
-                                        <source src="song.mp3">
-                                        <source src="song.wav">
-
-                                      Your browser does not support the audio element.
-                                      </audio>
-                                </ol>
-                            </div>
-                            <div class="col-sm-12 col-md-6 col-lg-6">
-                                <h6 class="display-4">Abilities</h6>
-                                <ol>
-                                    <li class="abilities">Organise and Plan</li>
-                                    <li class="abilities">Solve problems</li>
-                                    <li class="abilities">Self motivated</li>
-                                </ol>
-                            </div>
-                    </section>
-                </div>
-                <div class="row">
-                    <section id="academic">
-                        <div class="col-sm-12 col-md-12 col-lg-12">
-                            <h6 class="display-4">Academic history</h6>
-                            <dl>
-                                <dt><strong>School :</strong>&nbsp;Liceo Francés de Pereira</dt>
-                                <dd>
-                                    <div class="row"><img
-                                            src="https://www.pagegear.co/es/dominios/lfp.edu.co/plantillas/pagegear/recursos/logolfp.png"
-                                            class="col-6 d-none d-md-block" alt="Liceo Francés de Pereira">
-                                    </div>
-                                    <p>
-                                        The Liceo Francés de Pereira
-                                        is a school located on the outskirts
-                                        from Pereira, Colombia. Created in 1981, it currently houses nearly
-                                        than 2,000 students of various nationalities, from preschool
-                                        until high school.
-                                    </p>
-                                </dd>
-                                <dt><strong>University :</strong>&nbsp;Universidad de los Andes</dt>
-                                <dd>
-                                    <div class="row"><img
-                                            src="https://uniandes.edu.co/sites/default/files/logo-uniandes.png"
-                                            class="col-6 d-none d-md-block" alt="Universidad de los Andes">
-                                    </div>
-                                    <p>
-                                        The Universidad de los Andes is a private Colombian university
-                                        with offices in Bogotá and Cartagena. It was founded in 1948 by Mario
-                                        Laserna Pinzón, Francisco Pizano de Brigard, Alberto Lleras
-                                        Camargo and Nicolás Gómez Dávila, in order to create a
-                                        secular and independent higher education institution to the
-                                        political currents of the country.
-                                    </p>
-                                </dd>
-                            </dl>
-                        </div>
-                    </section>
-                </div>
+      <div class="container">
+        <div class="info p-5">
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-6">
+              <section id="profile">
+                <h1 class="display-4">Profile</h1>
+                <!--Arreglado el espacio raro con múltiples líneas.-->
+                <p>
+                  A polite, friendly and sociable person who can coordinate the
+                  task in a development team and provide work quality of the
+                  highest calibre. Daniel can keep a cool head in busy
+                  circumstances and motivate the rest of the group to work at
+                  their optimum. He does not have office experience but is ready
+                  to work on it.
+                </p>
+              </section>
             </div>
+            <div class="col-sm-12 col-md-12 col-lg-6">
+              <section id="biografic" class="col-sm-12 col-md-6 col-lg-6">
+                <h2 class="display-4">Contact</h2>
+                <dl class="row">
+                  <dt class="col-12">Address</dt>
+                  <dd class="col-12">Cra 3 #7-38 Pereira</dd>
+                  <dt class="col-12">Phone</dt>
+                  <dd class="col-12">312593221</dd>
+                  <dt class="col-12">Email</dt>
+                  <dd class="col-12">danielbetancurth80@hotmail.com</dd>
+
+                  <dt class="col-12">Linkedin</dt>
+                  <dd class="col-12">
+                    <a
+                      href="https://www.linkedin.com/in/daniel-betancurth-dorado-97a0a1159"
+                      target="_blank"
+                      >Click here</a
+                    >
+                  </dd>
+                </dl>
+              </section>
+            </div>
+          </div>
+          <section id="projects">
+            <h3 class="display-4">Projects</h3>
+            <div>
+              <!--Cambio a uso de párrafos en vez de elementos dd y dt.-->
+              <p class="font-weight-light">Ranking</p>
+              <!--Arreglado espaciado.-->
+              <p>
+                This prototype was made in 2018 with the aim of helping
+                university graduates find jobs in the best companies in the
+                country.
+              </p>
+              <!--Cambio a uso de CSS para el atributo border en vez de borderframe.-->
+              <iframe
+                src="https://www.youtube.com/embed/MHZXKtoeWvs"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </section>
+          <div class="row">
+            <section id="interests">
+              <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                  <h4 class="display-4">Interests</h4>
+                  <table class="table">
+                    <thead class="thead-dark">
+                      <tr>
+                        <th scope="col">Rank</th>
+                        <th scope="col">Topic</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Machine Learning</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Information Security</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Process Automation</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">4</th>
+                        <td>Mathematical models</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                  <h5 class="display-4">Hobbies</h5>
+                  <p>During my free time I use to:</p>
+                  <ol>
+                    <li class="hobbies">Play with my dog</li>
+                    <li class="hobbies">Practice English</li>
+                    <li class="hobbies">Listen music</li>
+                    <!--Arreglado error de no compatibilidad entre p y ol; sin embargo, se debería considerar el cambio a uso de rows en vez de listas.-->
+                    <li style="list-style-type: none">My favorite song:</li>
+                  </ol>
+                  <!--Separación entre audio y la lista.-->
+                  <audio controls>
+                    <source src="song.mp3" />
+                    <source src="song.wav" />
+                    Your browser does not support the audio element.
+                  </audio>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                  <h6 class="display-4">Abilities</h6>
+                  <ol>
+                    <li class="abilities">Organise and Plan</li>
+                    <li class="abilities">Solve problems</li>
+                    <li class="abilities">Self motivated</li>
+                  </ol>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="row">
+            <section id="academic">
+              <div class="col-sm-12 col-md-12 col-lg-12">
+                <h6 class="display-4">Academic history</h6>
+                <dl>
+                  <dt>
+                    <strong>School :</strong>&nbsp;Liceo Francés de Pereira
+                  </dt>
+                  <dd>
+                    <div class="row">
+                      <img
+                        src="https://www.pagegear.co/es/dominios/lfp.edu.co/plantillas/pagegear/recursos/logolfp.png"
+                        class="col-6 d-none d-md-block"
+                        alt="Liceo Francés de Pereira"
+                      />
+                    </div>
+                    <p>
+                      The Liceo Francés de Pereira is a school located on the
+                      outskirts from Pereira, Colombia. Created in 1981, it
+                      currently houses nearly than 2,000 students of various
+                      nationalities, from preschool until high school.
+                    </p>
+                  </dd>
+                  <dt>
+                    <strong>University :</strong>&nbsp;Universidad de los Andes
+                  </dt>
+                  <dd>
+                    <div class="row">
+                      <img
+                        src="https://uniandes.edu.co/sites/default/files/logo-uniandes.png"
+                        class="col-6 d-none d-md-block"
+                        alt="Universidad de los Andes"
+                      />
+                    </div>
+                    <p>
+                      The Universidad de los Andes is a private Colombian
+                      university with offices in Bogotá and Cartagena. It was
+                      founded in 1948 by Mario Laserna Pinzón, Francisco Pizano
+                      de Brigard, Alberto Lleras Camargo and Nicolás Gómez
+                      Dávila, in order to create a secular and independent
+                      higher education institution to the political currents of
+                      the country.
+                    </p>
+                  </dd>
+                </dl>
+              </div>
+            </section>
+          </div>
         </div>
+      </div>
     </main>
-    <footer class=footer>
-        <div class="container">
-            <p>Daniel Betancurth Dorado</p>
-            <a href="https://www.linkedin.com/in/daniel-betancurth-dorado-97a0a1159" target="_blank">Linkedin</a>
-            <br>
-            <label>Email:</label>
-            <br>
-            <label>danielbetancurth80@hotmail.com</label>
-        </div>
+    <footer class="footer">
+      <div class="container">
+        <p>Daniel Betancurth Dorado</p>
+        <a
+          href="https://www.linkedin.com/in/daniel-betancurth-dorado-97a0a1159"
+          target="_blank"
+          >Linkedin</a
+        >
+        <br />
+        <label>Email:</label>
+        <br />
+        <label>danielbetancurth80@hotmail.com</label>
+      </div>
     </footer>
 
-   
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
